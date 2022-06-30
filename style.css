@@ -1,0 +1,14 @@
+body{
+    background-size: cover;
+}
+#titulo{
+    width: 100%;
+    text-align: center;
+}
+#botoninstrucciones{
+    float: right;
+    box-shadow: 5px 5px 5px rgb(121, 22, 22);
+}
+#jugar,#reinisiar{
+    box-shadow: 5px 5px 5px #0004fd;
+}

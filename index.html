@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pong naris</title>
+    
+<!-----------------BOOSTRAP PARA CSS----------->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!----------------USO DE SONIDOS E IMAGENES EN JS ----------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-----------------USO DE BOOSTRAP EN JS----------->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+<!---------------LIBRERIA ML5 PARA USO DE CAMARA----------->
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+<!---------------DETECCION DE MUÑECA CON P5---------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+<!---------------USO DE SONIDOS CON P5 PARA JUEGOS--------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+  <link rel="stylesheet" href="style.css">      
+</head>
+<body background="fondo.jpg">
+   <center>
+    <div id="titulo" class="btn btn-primary">
+        <img src="titulo.png">
+        <button id="botoninstrucciones" class="btn btn-info"data-toggle="modal" data-target="#myModal">🎾instrucciones🎾</button>
+    </div>
+    <br>
+    <p></p>
+    <span>
+        <button id="jugar" class="btn btn-danger" onclick="jugar()">🔥 Jugar 🔥</button>
+        <button id="reinisiar" class="btn btn-danger" onclick="reinisiar()">✨ Reiniciar ✨</button>
+    </span>
+    <br>
+    <h3 id="estatus" class="btn btn-success"></h3>
+    <br>
+    <div id="canvas"></div>
+    <br>
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+<button class="close" data-dismiss="modal" >&times;</button>
+<h3 id="titulo instrucciones">instrucciones</h3>
+            </div >
+            <div id="contenido_instrucciones" class="modal-body">
+                <h3>ajuste su camara para que pueda captar su nariz</h3>
+                <h3>ponga su cara de lado isquierdo de la camara</h3>
+                <h3>su paleta se mobera del reacuerdo a su naris</h3>
+            </div>
+        </div>
+        </div>
+    </div>
+   </center> 
+<script src="main.js"></script>
+</body>
+</html>
